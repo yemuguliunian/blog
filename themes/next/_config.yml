@@ -128,7 +128,7 @@ scheme: Pisces
 # Value after `||` delimeter is the name of FontAwesome icon. If icon (with or without delimeter) is not specified, globe icon will be loaded.
 social:
   GitHub: https://github.com/yemuguliunian || github
-  E-Mail: gongjh419@163.com || envelope
+  E-Mail: mailto:gongjh419@163.com || envelope
   #Google: https://plus.google.com/yourname || google
   #Twitter: https://twitter.com/yourname || twitter
   #FB Page: https://www.facebook.com/yourname || facebook
@@ -145,11 +145,11 @@ social_icons:
 
 # Blog rolls
 #links_icon: link
-links_title: 推荐阅读
-links_layout: block
+#links_title: 推荐阅读
+#links_layout: block
 #links_layout: inline
-links:
-  前端基础进阶系列: https://www.jianshu.com/p/cd3fee40ef59
+#links:
+  #前端基础进阶系列: https://www.jianshu.com/p/cd3fee40ef59
 
 # Sidebar Avatar
 # in theme directory(source/images): /images/avatar.gif
