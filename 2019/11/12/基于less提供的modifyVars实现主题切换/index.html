@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next pisces use-motion" lang="zh-Hans">
+<html class="theme-next mist use-motion" lang="zh-Hans">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -75,7 +75,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="less,主题切换," />
 
 
 
@@ -87,13 +87,14 @@
 
 
 <meta name="description" content="参考https:&#x2F;&#x2F;github.com&#x2F;ElemeFE&#x2F;element&#x2F;issues&#x2F;3054 https:&#x2F;&#x2F;blog.csdn.net&#x2F;weixin_30872671&#x2F;article&#x2F;details&#x2F;98286899 - 使用 css&#x2F;less 动态更换主题色（换肤功能） https:&#x2F;&#x2F;www.cnblogs.com&#x2F;starof&#x2F;p&#x2F;5226739.html - less 简单入门 实现">
+<meta name="keywords" content="less,主题切换">
 <meta property="og:type" content="article">
 <meta property="og:title" content="基于less提供的modifyVars实现主题切换">
 <meta property="og:url" content="https:&#x2F;&#x2F;yemuguliunian.github.io&#x2F;blog&#x2F;2019&#x2F;11&#x2F;12&#x2F;%E5%9F%BA%E4%BA%8Eless%E6%8F%90%E4%BE%9B%E7%9A%84modifyVars%E5%AE%9E%E7%8E%B0%E4%B8%BB%E9%A2%98%E5%88%87%E6%8D%A2&#x2F;index.html">
 <meta property="og:site_name" content="夜幕顾流年的博客">
 <meta property="og:description" content="参考https:&#x2F;&#x2F;github.com&#x2F;ElemeFE&#x2F;element&#x2F;issues&#x2F;3054 https:&#x2F;&#x2F;blog.csdn.net&#x2F;weixin_30872671&#x2F;article&#x2F;details&#x2F;98286899 - 使用 css&#x2F;less 动态更换主题色（换肤功能） https:&#x2F;&#x2F;www.cnblogs.com&#x2F;starof&#x2F;p&#x2F;5226739.html - less 简单入门 实现">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-11-12T12:53:16.538Z">
+<meta property="og:updated_time" content="2019-11-13T04:20:49.120Z">
 <meta name="twitter:card" content="summary">
 
 
@@ -102,7 +103,7 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/blog/',
-    scheme: 'Pisces',
+    scheme: 'Mist',
     version: '5.1.4',
     sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: true,
@@ -191,6 +192,26 @@
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
             首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/blog/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/blog/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
           </a>
         </li>
       
@@ -311,6 +332,28 @@
           </span>
 
           
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/blog/categories/css/" itemprop="url" rel="index">
+                    <span itemprop="name">css</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -321,6 +364,37 @@
 
           
 
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  527 字
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  2 分钟
+                </span>
+              
+            </div>
           
 
           
@@ -377,6 +451,14 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/blog/tags/less/" rel="tag"># less</a>
+          
+            <a href="/blog/tags/%E4%B8%BB%E9%A2%98%E5%88%87%E6%8D%A2/" rel="tag"># 主题切换</a>
+          
+        </div>
+      
 
       
       
@@ -406,6 +488,11 @@
 
 
           
+
+  
+    <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC80NzUyMC8yNDAyMA=="></div>
+    </div>
 
   
 
@@ -466,7 +553,25 @@
             
 
             
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/blog/categories/index.html">
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
 
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/blog/tags/index.html">
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
             
 
           </nav>
@@ -550,7 +655,7 @@
 
 
 
-  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.1.4</div>
 
 
 
@@ -650,13 +755,6 @@
   
   
 
-
-  <script type="text/javascript" src="/blog/js/src/affix.js?v=5.1.4"></script>
-
-  <script type="text/javascript" src="/blog/js/src/schemes/pisces.js?v=5.1.4"></script>
-
-
-
   
   <script type="text/javascript" src="/blog/js/src/scrollspy.js?v=5.1.4"></script>
 <script type="text/javascript" src="/blog/js/src/post-details.js?v=5.1.4"></script>
@@ -690,6 +788,17 @@
 
 
 
+  
+    <script type="text/javascript">
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
   
 
 
