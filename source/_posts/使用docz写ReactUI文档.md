@@ -23,6 +23,7 @@ $ yarn add docz
 
 2. 在你项目中的任何位置新增 `.mdx` 文件
 <!-- more -->
+
 ```
 ---
 name: Button
@@ -88,17 +89,18 @@ export default {
 
 ```
 
-#### typescript
+### typescript
 
 This option is used if you need to import Typescript components inside your .mdx files.
 
-#### port
+### port
 
 启动服务端口
 
-#### ignore
+### ignore
 
 Option used to ignore files to be parsed by docz.
+
 
 ## FAQ
 
