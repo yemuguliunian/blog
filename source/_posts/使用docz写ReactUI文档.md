@@ -8,7 +8,6 @@ categories:
 - doc
 ---
 
-# DOCZ 写 React UI 组件文档
 > 使用简单，目前只支持 React
 
 - [官网](https://www.docz.site/)
@@ -23,7 +22,7 @@ $ yarn add docz
 ```
 
 2. 在你项目中的任何位置新增 `.mdx` 文件
-
+<!-- more -->
 ```
 ---
 name: Button
