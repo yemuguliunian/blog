@@ -84,7 +84,8 @@ export default {
     typescript: true,
     title: 'docz',
     ignore: ['README.md', 'CHANGELOG.md'],
-    port: '3000'
+    port: '3000',
+    dest: './docs',
 };
 
 ```
@@ -100,6 +101,10 @@ This option is used if you need to import Typescript components inside your .mdx
 ### ignore
 
 Option used to ignore files to be parsed by docz.
+
+### dest
+
+设置打包路径，默认值`.docz/dist`
 
 
 ## FAQ
@@ -125,10 +130,12 @@ module.exports = {
 
 
 ### 自定义样式
-1. 在项目根目录下新建 `docz`（文件名不限定于 `docz`，可自定义）文件夹
-2. 在 `docz` 目录下 新建 `gatsby-theme-docz/wrapper.js`，`gatsby-theme-docz/global.css`
 
-##### wrapper.js
+在项目根目录下新建 `src` 文件夹.
+
+在`docz`目录下新建`gatsby-theme-docz/wrapper.js`，`gatsby-theme-docz/global.css`.
+
+**wrapper.js**
 
 ```
 import React from 'react';
@@ -139,10 +146,66 @@ export default function Wrapper(props) {
 }
 
 ```
-##### global.css
+**global.css**
 
 ```
 p {
     margin: 0;
 }
+```
+
+
+### Writing a function or Class in mdx 
+
+参考：
+
+https://github.com/doczjs/docz/issues/918
+
+Example with a React component
+
+```
+<Playground>
+  {class Example extends React.Component {
+    constructor (props) {
+      super(props)
+
+      this.state = { show: false }
+    }
+
+    handleClick () {
+      this.setState({ show: true })
+    }
+
+    render () {
+      return (
+        <React.Fragment>
+          {this.state.show &&
+            <div>
+              <p>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+                no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
+                consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+                sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+                no sea takimata sanctus est Lorem ipsum dolor sit amet.
+              </p>
+            </div>
+          }
+          <button onClick={() => this.handleClick()}>Show</button>
+        </React.Fragment>
+      )
+    }
+  }}
+</Playground>
+```
+
+Example with a JS function
+
+```
+<Playground>
+  {() => {
+    console.log('docz')
+  }}
+</Playground>
 ```
