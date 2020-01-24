@@ -29,6 +29,7 @@ https://code.visualstudio.com/
 
 快捷键 Ctrl + Shift + X
 
+<!-- more -->
 ### Markdown 侧边预览
 
 - Ctrl + Shift + P  
